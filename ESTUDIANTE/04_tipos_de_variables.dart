@@ -23,7 +23,37 @@ print (precio);
 final preciofixed = precio.toStringAsFixed(3);
 print(preciofixed);
 
-string valorString = "10.1"
+String valorString = "10.1";
+
+bool miPrimerBoleano = false;
+print (miPrimerBoleano);
+
+bool _isloading = true;
+_isloading = false;
+print (_isloading);
+
+String leche = "leche";
+String arroz = "arroz";
+String azucar = "azucar";
+String panes = "panes";
+
+List<String> compras = ["leche","arroz","azucar","panes"];
+List<String> compras2 = ['a','b','c','d'];
+print (compras);
+print (compras2);
+
+List <double> precios = [1.25, 3.25, 1, 3,2];
+print (precios);
+var listax = [1.25, 1, "Sol", true];
+List<dynamic> listaY = [1.25,1,"sol", true];
+final listaz = [1.25,1, "Sol", true];
+
+print (listaz);
+listaz.add("Casa");
+print (listaz);
+print (listaz[2]);
+
+
 
 
 }
