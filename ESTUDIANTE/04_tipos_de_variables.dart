@@ -53,7 +53,11 @@ listaz.add("Casa");
 print (listaz);
 print (listaz[2]);
 
-
-
+List<String> inventarioequipos = ["router", "firestick", "camaras"];
+List<String> cantidad = ['1','2','3','4','5','6','7','8','9'];
+String equiposeleccionado = inventarioequipos [0];
+String cantidadseleccionada = cantidad [2];
+print("Equipo seleccionado: " + equiposeleccionado);
+print("cantidadseleccionada: " + cantidadseleccionada);
 
 }
