@@ -22,7 +22,23 @@ default:
 print("bebe");
 
 }
+final diaDelasemana = 'Miercoles';
+switch (diaDelasemana){
+  case'Lunes':
+  case'Martes':
+  case'Miercoles':
+  case'Jueves':
+  print ("Dia de clases");
+  case 'Viernes':
+   print ("Dia de trabajo");
+   case 'Sabado':
+   case 'Domingo':
+   print ("Fin de semana");
+   default:
+   print ("No hay un dia");
 
+
+}
 
 }
 
