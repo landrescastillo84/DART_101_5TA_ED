@@ -1,5 +1,3 @@
-import 'dart:ffi';
-import 'dart:io';
 
 void main (){
 for (var i = 0; i<=5; i++){

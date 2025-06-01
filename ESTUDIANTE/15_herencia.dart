@@ -1,8 +1,19 @@
 void main() {
-  final perro = Animal(nombre: "Pepe", tipo: "Perro", edad: 2);
-  final gato = Animal(nombre: "Pelusa", tipo: "Gato", edad: 1);
- 
-  gato.comer();
+  final perro = Perro(nombre: "Pepe", tipo: "Perro", edad: 2);
+  final loro = Ave(nombre: "Cotorro", tipo: "Loro", edad: 1);
+  final delfin = Pez(nombre: "Fifi", tipo: "Delfin", edad: 1);
+  perro.comer();
+  loro.comer();
+  delfin.comer();
+
+  perro.caminar();
+  loro.volar();
+  delfin.nadar();
+
+  final perro2 = Raza(nombre: "Nombre", raza: "Chihuahua", edad: 1,tipo: "Perro");
+  print(perro2.razaAnimal);
+  perro2.comer();
+  perro2.caminar();
 }
 
 class Animal {
@@ -22,25 +33,42 @@ class Animal {
   void respirar() {
     print("$nombre está respirando");
   }
+
+  String get ejemplo => "Hola";
+}
+
+class Perro extends Animal {
+  Perro({required super.nombre, required super.tipo, required super.edad});
+
+  void caminar() {
+    print("$nombre está caminando");
+  }
+}
+
+class Ave extends Animal {
+  Ave({required super.nombre, required super.tipo, required super.edad});
+
+ void volar() {
+    print("$nombre está volando");
+  }
   
 }
 
-class Perro {
+class Pez extends Animal {
+  Pez({required super.nombre, required super.tipo, required super.edad});
+  void nadar() {
+    print("$nombre está nadar");
+  }
+}
+
+class Raza extends Perro {
+  // Atributos
+  final String raza;
+
+  Raza({required super.nombre, required super.tipo, required super.edad, required this.raza});
+
+  String get razaAnimal => "El perro $nombre es de raza $raza";
 
 }
 
-class Ave {
-
-}
-
-class Pez {
-
-}
-
-
-
-
-
-
-
-
+  
